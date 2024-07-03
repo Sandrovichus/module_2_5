@@ -1,6 +1,6 @@
 def get_matrix(n, m, value):
     matrix = []
-    if value > 0:  # если значение value отрицательное или 0 - возвращаем пустой список
+    if value > 0 and n > 0 and m > 0:  # если значение аргумента отрицательное или 0 - возвращаем пустой список
         for i in range(n):
             matrix.append([])
             for j in range(m):
